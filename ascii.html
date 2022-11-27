@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoC</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+img {
+  float: left;
+ padding-right: 40px; 
+ padding-left: 40px;
+ padding-bottom: 40px;
+ 
+}
+</style>
+</head>
+<body class="body">
+  
+    <!--navigation-->
+    <nav>
+      <div class="container">
+      <ul>
+      <li><a href="index.html">Course</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="concepts.html">Concepts</a></li>
+      <li><a href="database.html">Databases</a></li>
+      <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="aboutme.html">Dev Team</a></li>
+      </ul>
+    </div>
+  </nav>
+    <header><h5></h5></header>
+
+<section>
+
+<center>
+  <h2 style="color: black;font-weight:bold;">ASCII</h2>
+</center>
+<br>
+	
+
+
+<p><img src="ascii.png" style="width:792px;height:528px;"></p>
+        
+<br>
+<br>        
+
+
+<p style="color: black;font-weight:bold;">Enter any number from 0 to 127 :</p>
+<input id="inputdec" >
+<p></p>
+<br>
+<button onclick="decToASCII()">Submit</button>
+<p></p>
+<p style="color: black;font-weight:bold;">ASCII Value : </p>
+<p id="demo"></p>
+
+<script>
+function decToASCII() {
+  x = document.getElementById("inputdec").value;
+  var res = String.fromCharCode(x);
+  document.getElementById("demo").innerHTML = res;
+  console.log(res);
+}
+</script>
+
+
+
+</section>
+
+
+
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+
+</body>
+</html>

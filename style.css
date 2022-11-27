@@ -1,0 +1,223 @@
+  *{margin: 0;
+  padding:0;
+}
+div.container {
+  margin: 0 auto;
+  /*margin: 0 auto 0 60px;*/
+  width: 1000px;
+  
+}
+
+.body{
+  background-color: #f7d047;
+
+}
+nav{
+  width: 100%;
+  height: 100px;
+  background-color: #000000;
+
+}
+  
+ 
+ ul{
+margin-left: 60px ;
+ }
+ ul li {
+list-style:none;
+display: inline-block;
+float:left;
+line-height: 100px;
+
+}
+ul li a {
+  display: block;
+test-decoration: none;
+font-size: 20px;
+font-family: Arial;
+color: #ffffff;
+padding: 0 20px;
+}
+ul li a:hover{
+color: red;
+
+}
+
+
+/*original code*/
+
+
+/* Create two columns/boxes that floats next to each other 
+nav {
+  float: left;
+  width: 15%;
+  background: #FFFF00;
+ padding: 20px;
+}*/
+
+
+article {
+  
+  padding: 20px;
+  width: auto;
+  background-color: #CCCCCC;
+  
+}
+
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ 
+
+/* Style the footer 
+footer {
+  background-color: #999999;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}*/
+/*.footer {
+  background: #3f24b9;
+  color: white;
+  height:100px;
+  padding-top: 20px;
+  position:static;
+  
+}*/
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+ /*Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.oborder {
+  color: rgb(0, 0, 0);
+  text-indent: 30px;
+  
+  border: 2px solid black;
+  margin: auto;  
+  padding: 20px;
+  text-align: center
+}
+/*
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+}*/
+
+.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+}
+.button1 {
+  background-color: #008CBA; /* Blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {
+  background-color: #666666; /* Black */
+  border: none;
+  color: yellow;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}	
+.image1 {
+  float: left;
+  padding-right: 40px; 
+  padding-left: 40px;
+  padding-bottom: 40px;
+  width:700px ;
+  height: 500px;
+}
+.image2 {
+  float: left;
+ padding-right: 40px; 
+ padding-left: 40px;
+ padding-bottom: 40px;
+ width:500px ;
+ height: 500px; 
+}
+.image3 {
+  float: left;
+ padding-right: 40px; 
+ padding-left: 40px;
+ padding-bottom: 40px;
+ width:auto ;
+ height: auto; 
+}
+/*
+.footer-bottom {
+  background: #000000;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  height:40px;
+  position:absolute;
+  bottom: 0px;
+  width: 100%;
+  
+
+}*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #000000;
+  color: white;
+}
